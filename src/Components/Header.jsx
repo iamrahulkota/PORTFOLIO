@@ -10,7 +10,7 @@ function Header() {
             <Link to='/'>
               {/* <img src={Logo} width='35px' className='mt-2 mr-5' /> */}
             </Link>
-            <Link to='/' className='uppercase font-bold text-5xl text-white hidden md:block'>AssortedLayer</Link>
+            <Link to='/' className='uppercase font-bold text-5xl text-white hidden md:block'>iamrahulkota</Link>
           </div>
           <div>
             <Link to='/about' className='font-medium text-3xl text-white'>About</Link>
