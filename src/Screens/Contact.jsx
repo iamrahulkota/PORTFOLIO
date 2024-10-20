@@ -120,7 +120,6 @@ function Contact() {
             </div>
         </div>
         {/* <CustomButton>SCHEDULE A CALL</CustomButton> */}
-        
     </HomeLayout>
   )
 }

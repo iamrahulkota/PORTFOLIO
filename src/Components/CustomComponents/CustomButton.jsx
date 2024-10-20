@@ -13,8 +13,11 @@ export const StyledButton = styled(Button)({
     },
 });
 
-export default function CustomButton({children}){
+export default function CustomButton({
+    buttonText,
+    buttonOnClick
+}){
     return (
-        <StyledButton variant="outlined">{children}</StyledButton>
+        <StyledButton variant="outlined" onClick={buttonOnClick}>{buttonText}</StyledButton>
     )
 }
