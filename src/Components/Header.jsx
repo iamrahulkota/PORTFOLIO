@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 function Header() {
   return (
     <header>
-        <nav className='flex justify-between py-10'>
+        <nav className='flex justify-between py-10 px-2 md:px-6 lg:px-12'>
           <div className='flex'>
             <Link to='/'>
               {/* <img src={Logo} width='35px' className='mt-2 mr-5' /> */}

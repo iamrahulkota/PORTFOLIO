@@ -8,6 +8,7 @@ export const StyledButton = styled(Button)({
     fontSize: '12px',
     fontWeight: 'normal',
     textTransform: 'uppercase',
+    fontFamily: 'satoshiRegular',
     '&:hover': {
         borderColor: '#FFFFFF',
     },

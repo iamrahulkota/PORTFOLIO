@@ -39,6 +39,8 @@ function Contact() {
     const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
     const PUBLIC_ID = import.meta.env.VITE_PUBLIC_ID;
 
+    // console.log(SERVICE_ID, TEMPLATE_ID, PUBLIC_ID)
+
     emailjs
       .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, {
         publicKey: PUBLIC_ID,
@@ -73,7 +75,7 @@ function Contact() {
               <h1 className='text-center'>Please fill out the form below and I will be in touch within 24 hours.</h1>
               <form ref={form} onSubmit={handleFormSubmit} className="space-y-6">
                 <div>
-                  <FormControl defaultValue="" required>
+                  <FormControl className='w-full' defaultValue="" required>
                     <Typography >Your Good name</Typography>
                     <StyledInput 
                       required 
@@ -84,7 +86,7 @@ function Contact() {
                       }}
                       placeholder="Enter your good name :)" />
                   </FormControl>
-                  <FormControl defaultValue="" required>
+                  <FormControl className='w-full' defaultValue="" required>
                     <Typography >Email</Typography>
                     <StyledInput 
                       required 
@@ -95,7 +97,7 @@ function Contact() {
                       }} 
                       placeholder="info@gmail.com" />
                   </FormControl>
-                  <FormControl defaultValue="" required>
+                  <FormControl className='w-full' defaultValue="" required>
                     <Typography >Text Area</Typography>
                     <StyledInput 
                       required 
