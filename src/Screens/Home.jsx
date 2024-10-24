@@ -3,9 +3,14 @@ import HomeLayout from '../Layout/HomeLayout'
 import CustomButton from '../Components/CustomComponents/CustomButton';
 
 function Home() {
+
+  const handleClick = () => {
+    console.log('Projects Button clicked!');
+};
+
   return (
     <HomeLayout>
-          <CustomButton>View Project</CustomButton>
+          <CustomButton buttonText="Projects" buttonOnClick={handleClick}/>
     </HomeLayout>
   )
 }

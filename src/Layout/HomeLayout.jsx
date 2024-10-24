@@ -4,12 +4,10 @@ import Header from '../Components/Header'
 
 function HomeLayout({children}) {
   return (
-    <div className='bg-[#0B0C0F] px-2 md:px-6 lg:px-12'>
-        <div className=''>
+    <div className='bg-[#0B0C0F] '>
             <Header />
                 {children}
             <Footer />
-        </div>
     </div>
   )
 }
